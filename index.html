@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Meeting WebSDK 3.11.0 Client View</title>
+
+    <!-- For Client View -->
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/3.11.0/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/3.11.0/css/react-select.css" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Origin Trials to enable Gallery View in Chrome/Edge -->
+    <script src="coi-serviceworker.js"></script>
+    <!-- More Info: https://marketplace.zoom.us/docs/sdk/overview/improve-performance -->
+    <!-- SharedArrayBuffers in non-isolated pages on Desktop platforms -->
+    <meta http-equiv="origin-trial" content="AkBC6T2NnosY6N71LXXA09Q1GMiLzuHuOKpC9SwfbPxzoxr2PMOM2uHZmAxIFqq+dCvUD/4kPoylRZ4G5YCkow8AAAB7eyJvcmlnaW4iOiJodHRwczovL3Nla2VsbHkuZ2l0aHViLmlvOjQ0MyIsImZlYXR1cmUiOiJVbnJlc3RyaWN0ZWRTaGFyZWRBcnJheUJ1ZmZlciIsImV4cGlyeSI6MTcwOTg1NTk5OSwiaXNTdWJkb21haW4iOnRydWV9">
+  </head>
+    <style>
+    body {
+       background-color: rgb(105, 184, 233);
+       background-image: url('https://zoom.us/account/branding/p/b7f37763-6dee-4be3-8c55-cda5ba5c7310.gif');
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-position: center; 
+    }
+  </style>
+  
+  <body>
+
+    <main>
+      <h1>Meeting WebSDK 3.11.0 Client View</h1>
+
+      <!-- For Component View -->
+      <div id="meetingSDKElement">
+        <!-- Zoom Meeting SDK Rendered Here -->
+      </div>
+
+      <button onClick="getSignature()">Join Coach</button>
+    </main>
+
+    <!-- For Component and Client View -->
+    <script src="https://source.zoom.us/3.11.0/lib/vendor/react.min.js"></script>
+    <script src="https://source.zoom.us/3.11.0/lib/vendor/react-dom.min.js"></script>
+    <script src="https://source.zoom.us/3.11.0/lib/vendor/redux.min.js"></script>
+    <script src="https://source.zoom.us/3.11.0/lib/vendor/redux-thunk.min.js"></script>
+    <script src="https://source.zoom.us/3.11.0/lib/vendor/lodash.min.js"></script>
+
+    <!-- For Client View -->
+    <script src="https://source.zoom.us/zoom-meeting-3.11.0.min.js"></script>
+    <script type="text/javascript" src="client-view.js"></script>
+
+    <!-- For Component View -->
+    <!-- <script src="https://source.zoom.us/3.11.0/zoom-meeting-embedded-3.11.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="component-view.js"></script> -->
+
+    
+</html>
