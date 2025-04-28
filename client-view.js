@@ -59,33 +59,11 @@ function startMeeting(signature) {
         tk: registrantToken,
         success: (success) => {
           console.log(success)
-          
-// Add virtual background options here
-          ZoomMtg.updateVirtualBackgroundList({
-            virtualBackgroundList: [
-              {
-                id: 'vb1',
-                name: ’Screenshot 2023-10-16 at 11.21.28 AM.png’,
-                path: 'blob:https://zoom.us/c7c8efc2-d296-4edc-9590-30e94450fa6a',  // Replace with your hosted image
-                default: true
-              },
-              {
-                id: 'vb2',
-                name: ‘magaoay sun’,
-                path: 'blob:https://zoom.us/85b0cfa2-5751-4589-a8a1-96b7a4f3a645'
-              }
-            ]
-          })
-
         },
         error: (error) => {
           console.log(error)
         },
       })
-
-    },
-      })
-
     },
     error: (error) => {
       console.log(error)
