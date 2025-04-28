@@ -83,9 +83,4 @@ function startMeeting(signature) {
         },
       })
 
-    },
-    error: (error) => {
-      console.log(error)
     }
-  })
-}
