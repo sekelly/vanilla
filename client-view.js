@@ -10,7 +10,7 @@ ZoomMtg.i18n.reload('en-US')
 var signatureEndpoint = 'https://meetingsdk-sample-signature-node-js-iota.vercel.app/'
 var sdkKey = 'PfPapLCavJc2ZBjMkssNeqboLdBOpoAEXQTc'
 var meetingNumber = '95160050210'
-var role = 1
+var role = 0
 var disablePreview = 'true'
 var leaveUrl = 'https://sekelly.github.io/vanilla'
 var userName = 'ClientView'
